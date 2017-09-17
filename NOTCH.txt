@@ -1,0 +1,40 @@
+gotNOTCH
+
+Shopify Partners Development Store
+https://partners.shopify.com
+u: email address
+p: 2Toroandpagodaarecats^_^
+
+Development
+theme configure --password=52a59961d1a27cc682742fedabd3edc2 --store=dev-shopnotch.myshopify.com --themeid=180705929
+
+Production gotnotch store:
+Production
+theme configure --password=bb6df0a03317f559409f6f284dfaa7ca  --store=gotnotch.myshopify.com --themeid=166803526
+
+
+
+
+
+raison detre
+ To fulfill a creative impulse. utilmately we want to bring joy. we want to make peoples lives easier. we want to minimize our carbon impact. we are honest and authentic. 
+
+1. unique object / useful object
+2. intersection of hand fabrication & machine fabrication
+3. intersection or tension between natural materials and composite or engineered materials
+	i. wood
+	ii. metal
+	iii. natural fiber
+	iv. synthetic fibers
+	v. cermaic
+	vi. plastic
+4. upcycle / recycle
+5. ...
+
+Sept. 6. 2017
+1. HSBC Comercial Account
+2. Work on About text
+3. Photoshop
+4. Set Shopify Site homepage to a product page
+
+

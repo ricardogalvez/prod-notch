@@ -1,0 +1,9 @@
+config.yml
+
+### OSX ###
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+### Sass ###
+*.css.map
