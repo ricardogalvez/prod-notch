@@ -7,3 +7,5 @@ config.yml
 
 ### Sass ###
 *.css.map
+
+theme.lock
