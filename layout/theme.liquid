@@ -37,6 +37,7 @@
   {% include 'google-fonts' %}
   {% include 'load-css' %}
 
+  </style>
   <script>
     var theme = {
       stylesheet: "{{ 'theme.scss.css' | asset_url }}",
@@ -81,6 +82,7 @@
 
   <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'custom.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
   <!--[if lte IE 9]><script src="{{ 'custom.js' | asset_url }}"></script><![endif]-->
+
 </head>
 
 <body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ template | split: '.' | first | handle }} data-animations">
