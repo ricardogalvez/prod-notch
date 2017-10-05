@@ -9,3 +9,5 @@ config.yml
 *.css.map
 
 theme.lock
+
+NOTCH.txt
