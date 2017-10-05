@@ -85,9 +85,9 @@
         Site name gets precedence with `h1` tag on homepage, div on other pages.
         {% endcomment %}
         {% if template.name == 'index' %}
-          <h1 class="site-header__logo-wrapper h4" itemscope itemtype="http://schema.org/Organization">
+          <h1 class="site-header__logo-wrapper h5" itemscope itemtype="http://schema.org/Organization">
         {% else %}
-          <div class="site-header__logo-wrapper h4" itemscope itemtype="http://schema.org/Organization">
+          <div class="site-header__logo-wrapper h5" itemscope itemtype="http://schema.org/Organization">
         {% endif %}
 
         <a href="/" itemprop="url" class="site-header__logo">
@@ -112,6 +112,7 @@
               <img class="site-header__logo-image site-header__logo-image--transparent" src="{{ transparent_logo | img_url: image_size }}" srcset="{{ transparent_logo | img_url: image_size }} 1x, {{ transparent_logo | img_url: image_size, scale: 2 }} 2x" alt="{{ section.settings.logo.alt | default: shop.name }}"
                       itemprop="logo">
             {% endif %}
+            {{ shop.name }}
           {% else %}
             {{ shop.name }}
           {% endif %}

@@ -1,9 +1,9 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Notch Narrative ",
+    "theme_name": "Notch Development",
     "theme_author": "Ricardo",
-    "theme_version": "0.0.1",
+    "theme_version": "0.0.2",
     "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/using-themes\/themes-by-shopify\/narrative",
     "theme_support_url": "https:\/\/support.shopify.com\/"
   },
@@ -12,7 +12,7 @@
     "settings": [
       {
         "type": "header",
-        "content": "Accent Colors"
+        "content": "Accent Colors Pendejo"
       },
       {
         "type": "color",
