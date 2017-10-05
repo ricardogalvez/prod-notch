@@ -8243,4 +8243,30 @@ $fast-drawer-transition: transform 0.55s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 
-@import "notch";
+//@import "notch";
+
+.site-header {
+
+  background: green;
+
+  &__logo-wrapper {
+
+     h5 {
+
+       a {
+         font-size: 3.6(rem);
+         letter-spacing: 0.1(rem);
+         padding: 1(rem) 0 0 0;
+         top: 4(rem);
+         // stuff
+       }
+     }
+  } // /__logo-wrapper
+
+  &__logo-image {
+    float: left;
+    height: 60px;
+    position: relative;
+    top: 0.6rem;
+  }
+}

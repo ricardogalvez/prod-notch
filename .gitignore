@@ -8,6 +8,9 @@ config.yml
 ### Sass ###
 *.css.map
 
+
+NOTCH.txt
+
 theme.lock
 
 NOTCH.txt
