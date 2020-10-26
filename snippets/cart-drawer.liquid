@@ -1,4 +1,4 @@
-{% if settings.show_cart_drawer and template.name != 'cart' %}
+{% if settings.show_cart_drawer %}
 <div class="drawer-cover"></div>
 <div class="drawer critical-hide" tabindex="-1" data-section-id="cart-drawer" data-section-type="cart-drawer" data-cart-token="{{ cart.id }}" data-drawer-push aria-hidden="true">
 
@@ -43,7 +43,7 @@
           {% endif %}
 
           {% for item in cartItems %}
-            <div class="cart-drawer__item{% if item == 'template' %} ajax-cart__template{% endif %}" data-cart-item data-cart-item-id="{{ item.key }}" aria-live="polite">
+            <div id="{{ item.key }}" class="cart-drawer__item{% if item == 'template' %} ajax-cart__template{% endif %}" data-cart-item data-cart-item-id aria-live="polite">
 
               {% assign itemImage = true %}
               {% if item.image == blank and item.product.featured_image == blank %}
@@ -111,7 +111,7 @@
                   {% endfor %}
                 </div>
 
-                <label for="quantity_{{ item.key }}" class="label--hidden" data-cart-item-label-quantity>{{ 'cart.general.item_quantity' | t }}</label>
+                <label for="quantity_{{ item.key }}" class="label--hidden" data-cart-item-label-quantity->{{ 'cart.general.item_quantity' | t }}</label>
                 <input id="quantity_{{ item.key }}" class="cart-drawer__item-quantity" value="{{ item.quantity }}" type="number" pattern="\d*" min="1" aria-label="{{ 'cart.general.item_quantity' | t }}" data-cart-item-input-quantity>
 
                 <button class="cart-drawer__item-delete btn-link" type="button" data-cart-item-delete>{{ 'cart.general.remove' | t }}</button>

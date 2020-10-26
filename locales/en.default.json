@@ -33,11 +33,26 @@
       "share_on_facebook": "Share",
       "share_on_twitter": "Tweet",
       "share_on_pinterest": "Pin it",
-      "social_platform": "{{ name }} on {{ platform }}",
+      "link_facebook": "Facebook",
+      "link_twitter": "Twitter",
+      "link_pinterest": "Pinterest",
+      "link_snapchat": "Snapchat",
+      "link_instagram": "Instagram",
+      "link_tumblr": "Tumblr",
+      "link_youtube": "Youtube",
+      "link_vimeo": "Vimeo",
       "alt_text": {
         "share_on_facebook": "Share on Facebook",
         "share_on_twitter": "Tweet on Twitter",
-        "share_on_pinterest": "Pin on Pinterest"
+        "share_on_pinterest": "Pin on Pinterest",
+        "view_on_facebook": "View on Facebook",
+        "view_on_twitter": "View on Twitter",
+        "view_on_pinterest": "View on Pinterest",
+        "view_on_snapchat": "View on Snapchat",
+        "view_on_instagram": "View on Instagram",
+        "view_on_tumblr": "View on Tumblr",
+        "view_on_youtube": "View on Youtube",
+        "view_on_vimeo": "View on Vimeo"
       }
     },
     "search": {
@@ -52,9 +67,7 @@
     },
     "newsletter_form": {
       "newsletter_placeholder": "My email address",
-      "confirmation": "Thanks for subscribing",
-      "blank_error": "Email can't be blank.",
-      "invalid_error": "Please enter a valid email address."
+      "confirmation": "Thanks for subscribing"
     },
     "header": {
       "expand_navigation": "Expand navigation",
@@ -100,7 +113,7 @@
       "item_quantity": "Item Quantity",
       "cookies_required": "Enable cookies to use the shopping cart",
       "cart_error": "There was an error while updating your cart. Please try again.",
-      "cart_quantity_error_html": "You can only add {{ quantity }} {{ title }} to your cart."
+      "cart_quantity_error_html": "You can only add <span><\/span> <span><\/span> to your cart."
     },
     "label": {
       "product": "Product",
@@ -215,8 +228,7 @@
       "quantity": "Quantity",
       "total": "Total",
       "fulfilled_at": "Fulfilled {{ date }}",
-      "subtotal": "Subtotal",
-      "track_shipment": "Track shipment"
+      "subtotal": "Subtotal"
     },
     "recover_password": {
       "title": "Reset your password",
@@ -248,8 +260,6 @@
       "collection_title": "Your collection's name",
       "product_vendor": "Product vendor",
       "product_title": "Example Product Title",
-      "blog_title": "Your post's title",
-      "blog_excerpt": "Your store hasn’t published any blog posts yet. A blog can be used to talk about new product launches, tips, or other news you want to share with your customers. You can check out Shopify’s ecommerce blog for inspiration and advice for your own store and blog.",
       "no_content": "This section doesn’t currently include any content. Add content to this section using the sidebar."
     }
   },
@@ -262,6 +272,7 @@
       "create_account": "Create account"
     },
     "footer": {
+      "social_platform": "{{ name }} on {{ platform }}",
       "copyright": "Copyright"
     }
   },
@@ -291,7 +302,7 @@
       "address_error": "Error looking up that address",
       "address_no_results": "No results for that address",
       "address_query_limit_html": "You have exceeded the Google API usage limit. Consider upgrading to a <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Premium Plan<\/a>.",
-      "auth_error_html": "There was a problem authenticating your Google Maps API Key."
+      "auth_error_html": "There was a problem authenticating your Google Maps account. Create and enable the <a href=\"https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key\">JavaScript API<\/a> and <a href=\"https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key\">Geocoding API<\/a> permissions of your app."
     },
     "product_template": {
       "open_image_slideshow": "Open image in slideshow",
@@ -299,9 +310,6 @@
     },
     "featured_product": {
       "full_details": "Full details"
-    },
-    "newsletter": {
-      "submit": "Submit"
     }
   },
   "gift_cards": {
@@ -324,5 +332,8 @@
   "video": {
     "play": "Play video",
     "close": "Stop video"
+  },
+  "consistent_cart_addon": {
+    "merge_cart_text": "It seems you already have a cart from a previous session. Would you like to merge your previous cart with your current cart?"
   }
 }

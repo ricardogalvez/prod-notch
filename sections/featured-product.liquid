@@ -1,22 +1,13 @@
 {%- assign product = all_products[section.settings.featured_product] -%}
+
+{% if product == empty %}
+  {%- assign section_onboarding = true -%}
+{% endif %}
+
 {%- assign current_variant = product.selected_or_first_available_variant -%}
 {%- assign current_variant_sale = false -%}
 
-{%- if product == empty -%}
-  {%- assign section_onboarding = true -%}
-  {%- assign vendor = 'homepage.onboarding.product_vendor' | t -%}
-  {%- assign title = 'homepage.onboarding.product_title' | t -%}
-  {%- assign compare_at_price = 2999 -%}
-  {%- assign price = 1999 -%}
-{%- else -%}
-  {%- assign section_onboarding = false -%}
-  {%- assign vendor = product.vendor -%}
-  {%- assign title = product.title -%}
-  {%- assign compare_at_price = current_variant.compare_at_price -%}
-  {%- assign price = current_variant.price -%}
-{%- endif -%}
-
-<div id="FeaturedProduct-{{ section.id }}" class="featured-product" data-section-id="{{ section.id }}" data-section-type="featured-product" data-variant-id="{{ current_variant.id }}" {% if section_onboarding %}data-onboarding{% endif %}>
+<div id="{{ section.id }}" class="featured-product" data-section-id="{{ section.id }}" data-section-type="featured-product" data-variant-id="{{ current_variant.id }}" {% if section_onboarding %}data-onboarding{% endif %}>
   <div class="featured-product__wrapper{% if section.settings.layout == 'full' %} featured-product__wrapper--full-width{% endif %}">
 
     <div class="featured-product__image-column">
@@ -33,7 +24,7 @@
                 {% assign parentFit = 'data-parent-fit="contain"' %}
 
                 <style>
-                  #FeaturedProduct-{{ section.id }} .featured-product__image.lazyloaded {
+                  .featured-product__image.lazyloaded {
                     object-fit: contain;
                     font-family: "object-fit: contain";
                     background-color: {{ section.settings.background_color }};
@@ -44,7 +35,7 @@
                 {% assign parentFit = 'data-parent-fit="cover"' %}
 
                 <style>
-                  #FeaturedProduct-{{ section.id }} .featured-product__image.lazyloaded {
+                  .featured-product__image.lazyloaded {
                     object-fit: cover;
                     font-family: "object-fit: cover";
                     background-color: {{ section.settings.background_color }};
@@ -74,12 +65,24 @@
         <div class="featured-product__content-header {% if section.settings.show_share_buttons %}featured-product__content-header--sharing{% endif %}">
 
           {% if section.settings.show_vendor %}
-            <p class="product__vendor text-small text-center" itemprop="brand">{{ vendor }}</p>
+            <p class="product__vendor text-small text-center" itemprop="brand">{{ product.vendor }}</p>
           {% endif %}
 
-          <h2 class="product__title text-center" itemprop="name">{{ title }}</h2>
+          {% unless section_onboarding %}
+            {%- assign title = product.title -%}
+          {% else %}
+            {%- assign title = 'Select a product' -%}
+          {% endunless %}
+          <h2 class="product__title text-center" itemprop="name">{{ title }}</h1>
 
           <p class="product__price text-center">
+            {% unless section_onboarding %}
+              {%- assign compare_at_price = current_variant.compare_at_price -%}
+              {%- assign price = current_variant.price -%}
+            {% else %}
+              {%- assign compare_at_price = 2999 -%}
+              {%- assign price = 1999 -%}
+            {% endunless %}
             {% if compare_at_price > price %}
               {%- assign current_variant_sale = true -%}
             {% endif %}
@@ -153,7 +156,7 @@
       {
         "type": "select",
         "id": "image_size",
-        "label": "Image layout",
+        "label": "Image Size",
         "default": "cover",
         "options": [
           {
@@ -169,7 +172,7 @@
       {
         "type": "color",
         "id": "background_color",
-        "label": "Image background",
+        "label": "Image Background color",
         "default": "transparent"
       },
       {

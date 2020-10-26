@@ -33,11 +33,26 @@
       "share_on_facebook": "Partilhar",
       "share_on_twitter": "Tweetar",
       "share_on_pinterest": "Pin it",
-      "social_platform": "{{ name }} na {{ plataform }}",
+      "link_facebook": "Facebook",
+      "link_twitter": "Twitter",
+      "link_pinterest": "Pinterest",
+      "link_snapchat": "Snapchat",
+      "link_instagram": "Instagram",
+      "link_tumblr": "Tumblr",
+      "link_youtube": "Youtube",
+      "link_vimeo": "Vimeo",
       "alt_text": {
         "share_on_facebook": "Partilhe no Facebook",
         "share_on_twitter": "Tuíte no Twitter",
-        "share_on_pinterest": "Adicione no Pinterest"
+        "share_on_pinterest": "Adicione no Pinterest",
+        "view_on_facebook": "Vista no Facebook",
+        "view_on_twitter": "Vista no Twitter",
+        "view_on_pinterest": "Vista no Pinterest",
+        "view_on_snapchat": "Vista no Snapchat",
+        "view_on_instagram": "Vista no Instagram",
+        "view_on_tumblr": "Vista no Tumblr",
+        "view_on_youtube": "Vista no Youtube",
+        "view_on_vimeo": "Vista no Vimeo"
       }
     },
     "search": {
@@ -52,9 +67,7 @@
     },
     "newsletter_form": {
       "newsletter_placeholder": "O meu email",
-      "confirmation": "Obrigado por subscrever",
-      "blank_error": "O email não pode ficar em branco.",
-      "invalid_error": "Por favor, introduza um endereço de email válido."
+      "confirmation": "Obrigado por subscrever"
     },
     "header": {
       "expand_navigation": "Alternar navegação",
@@ -100,7 +113,7 @@
       "item_quantity": "Quantidade de Item",
       "cookies_required": "Ative cookies para poder usar o carrinho de compras",
       "cart_error": "Ocorreu um erro ao atualizar o carrinho. Por favor, tente novamente.",
-      "cart_quantity_error_html": "Pode adicionar ao seu carrinho apenas {{ quantity }} {{ title }}."
+      "cart_quantity_error_html": "Pode adicionar ao seu carrinho apenas <span><\/span> <span><\/span>."
     },
     "label": {
       "product": "Produto",
@@ -215,8 +228,7 @@
       "quantity": "Quantidade",
       "total": "Total",
       "fulfilled_at": "Concluído em {{ date }}",
-      "subtotal": "Subtotal",
-      "track_shipment": "Acompanhar envio"
+      "subtotal": "Subtotal"
     },
     "recover_password": {
       "title": "Repor a sua senha",
@@ -248,8 +260,6 @@
       "collection_title": "O nome da sua coleção",
       "product_vendor": "O fornecedor do produto",
       "product_title": "Título do Produto Exemplo",
-      "blog_title": "O título do seu post",
-      "blog_excerpt": "A sua loja não publicou ainda qualquer post no blog. Um blog pode ser usado para falar de lançamentos de novos produtos, dicas e outras notícias que deseje partilhar com os seus clientes. Pode dar uma vista de olhos no blog comercial da Shopify para se inspirar e obter alguns conselhos para a sua própria loja e blog.",
       "no_content": "Esta sección actualmente no incluye ningún contenido. Añade un contenido a esta sección utilizando la barra lateral."
     }
   },
@@ -262,6 +272,7 @@
       "create_account": "Criar conta"
     },
     "footer": {
+      "social_platform": "{{ name }} na {{ plataform }}",
       "copyright": "Direitos autorais"
     }
   },
@@ -291,7 +302,7 @@
       "address_error": "Não é possível localizar o endereço",
       "address_no_results": "Nenhum resultado para este endereço",
       "address_query_limit_html": "Você excedeu a cota de uso da API do Google. Considere a atualização para um <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Plano Premium<\/a>.",
-      "auth_error_html": "Houve um problema autenticação de sua conta do Google Maps API."
+      "auth_error_html": "Houve um problema autenticação de sua conta do Google Maps. Criar e ativar a <a href=\"https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key\">API JavaScript<\/a> e permissões de <a href=\"https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key\">geocodificação da API<\/a> do seu aplicativo."
     },
     "product_template": {
       "open_image_slideshow": "Abrir a imagem em slideshow",
@@ -299,9 +310,6 @@
     },
     "featured_product": {
       "full_details": "Detalhes completos"
-    },
-    "newsletter": {
-      "submit": "Enviar"
     }
   },
   "gift_cards": {
@@ -324,5 +332,8 @@
   "video": {
     "play": "Iniciar o vídeo",
     "close": "Parar o vídeo"
+  },
+  "consistent_cart_addon": {
+    "merge_cart_text": "It seems you already have a cart from a previous session. Would you like to merge your previous cart with your current cart?"
   }
 }

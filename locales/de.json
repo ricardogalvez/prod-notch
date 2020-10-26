@@ -33,11 +33,26 @@
       "share_on_facebook": "Teilen",
       "share_on_twitter": "Twittern",
       "share_on_pinterest": "Pinnen",
-      "social_platform": "{{ name }} auf {{ platform }}",
+      "link_facebook": "Facebook",
+      "link_twitter": "Twitter",
+      "link_pinterest": "Pinterest",
+      "link_snapchat": "Snapchat",
+      "link_instagram": "Instagram",
+      "link_tumblr": "Tumblr",
+      "link_youtube": "Youtube",
+      "link_vimeo": "Vimeo",
       "alt_text": {
         "share_on_facebook": "Auf Facebook teilen",
         "share_on_twitter": "Auf Twitter twittern",
-        "share_on_pinterest": "Auf Pinterest pinnen"
+        "share_on_pinterest": "Auf Pinterest pinnen",
+        "view_on_facebook": "Auf der Facebook",
+        "view_on_twitter": "Auf der Twitter",
+        "view_on_pinterest": "Auf der Pinterest",
+        "view_on_snapchat": "Auf der Snapchat",
+        "view_on_instagram": "Auf der Instagram",
+        "view_on_tumblr": "Auf der Tumblr",
+        "view_on_youtube": "Auf der Youtube",
+        "view_on_vimeo": "Auf der Vimeo"
       }
     },
     "search": {
@@ -52,9 +67,7 @@
     },
     "newsletter_form": {
       "newsletter_placeholder": "Meine E-Mail Adresse",
-      "confirmation": "Danke für Ihre Anmeldung",
-      "blank_error": "E-Mail darf nicht leer sein.",
-      "invalid_error": "Bitte geben Sie eine gültige E-Mail-Adresse an."
+      "confirmation": "Danke für Ihre Anmeldung"
     },
     "header": {
       "expand_navigation": "Umschalten navigation",
@@ -100,7 +113,7 @@
       "item_quantity": "Artikelanzahl",
       "cookies_required": "Aktivieren Sie Cookies, um den Einkaufswagen benutzen zu können",
       "cart_error": "Beim Aktualisieren des Einkaufswagens ist ein Fehler aufgetreten. Bitte versuche es erneut.",
-      "cart_quantity_error_html": "Sie können Ihrem Warenkorb maximal {{ quantity }} {{ title }} hinzufügen."
+      "cart_quantity_error_html": "Sie können Ihrem Warenkorb maximal <span><\/span> <span><\/span> hinzufügen."
     },
     "label": {
       "product": "Artikel",
@@ -215,8 +228,7 @@
       "quantity": "Menge",
       "total": "Gesamt",
       "fulfilled_at": "Geliefert am {{ date }}",
-      "subtotal": "Zwischensumme",
-      "track_shipment": "Sendung verfolgen"
+      "subtotal": "Zwischensumme"
     },
     "recover_password": {
       "title": "Passwort zurücksetzen",
@@ -248,8 +260,6 @@
       "collection_title": "Der Name Ihrer Kollektion",
       "product_vendor": "Der Produktverkäufer",
       "product_title": "Beispielhafter Produkttitel",
-      "blog_title": "Der Titel Ihres Posts",
-      "blog_excerpt": "Ihr Laden hat noch keine Blogposts veröffentlicht. Ein Blog kann genutzt werden, um über die Einführung neuer Produkte, Tipps oder andere Neuigkeiten, die Sie mit Ihren Kunden teilen möchten, zu berichten. Für Inspiration und Ratschläge für Ihren eigenen Laden und Blog können Sie den E-Commerce-Blog von Shopify besuchen.",
       "no_content": "Dieser Bereich hat zur Zeit keinen Inhalt. Füge diesem Bereich über die Seitenleiste Inhalte hinzu."
     }
   },
@@ -262,6 +272,7 @@
       "create_account": "Account erstellen"
     },
     "footer": {
+      "social_platform": "{{ name }} auf {{ platform }}",
       "copyright": "Urheberrecht"
     }
   },
@@ -291,7 +302,7 @@
       "address_error": "Kann die Adresse nicht finden",
       "address_no_results": "Keine Ergebnisse für diese Adresse",
       "address_query_limit_html": "Sie haben die Google- API-Nutzungsgrenze überschritten. Betrachten wir zu einem <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Premium-Paket<\/a> zu aktualisieren.",
-      "auth_error_html": "Es gab ein Problem bei Google Maps API Konto zu authentifizieren."
+      "auth_error_html": "Es gab ein Problem bei Google Maps Konto zu authentifizieren. Erstellen und die <a href=\"https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key\">JavaScript- API<\/a> und <a href=\"https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key\">Geocoding API<\/a> -Berechtigungen der App aktivieren."
     },
     "product_template": {
       "open_image_slideshow": "Öffnen Sie das Bild in Diashow",
@@ -299,9 +310,6 @@
     },
     "featured_product": {
       "full_details": "Alle Einzelheiten"
-    },
-    "newsletter": {
-      "submit": "Absenden"
     }
   },
   "gift_cards": {
@@ -324,5 +332,8 @@
   "video": {
     "play": "Spielen Sie das Video",
     "close": "Beenden Sie das Video"
+  },
+  "consistent_cart_addon": {
+    "merge_cart_text": "Es scheint, als hätten Sie bereits einen Warenkorb. Sollen wir Ihren vorherigen Warenkorb mit Ihrem neuen zusammenlegen?"
   }
 }

@@ -46,7 +46,8 @@
         {% endif %}
 
         {% for item in cartItems %}
-          <tr class="cart-item{% if item == 'template' %} ajax-cart__template{% endif %}" data-cart-item data-cart-item-id="{{ item.key }}">
+          <tr id="{{ item.key }}" class="cart-item line{{ forloop.index }}{% if item == 'template' %} ajax-cart__template{% endif %}" data-cart-item data-cart-item-id>
+
             <td class="cart-item__image-wrapper">
               {% assign itemImage = true %}
               {% if item.image == blank and item.product.featured_image == blank %}
@@ -127,8 +128,6 @@
               <p class="small--hide">
                 <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0" class="btn btn--small btn--clear btn--primary-color cart-item__remove" data-cart-item-delete>{{ 'cart.general.remove' | t }}</a>
               </p>
-
-              <p class="cart-item__message" data-item-message></p>
             </td>
 
             <td class="cart-item__price-wrapper small--hide">
@@ -141,8 +140,8 @@
             <td class="cart-item__update-wrapper text-right">
 
               <div class="cart-item__qty">
-                <label for="quantity_{{ item.key }}" class="cart-item__qty-label" data-cart-item-label-quantity>{{ 'cart.label.quantity' | t }}</label>
-                <input id="quantity_{{ item.key }}" class="cart-item__qty-input" value="{{ item.quantity }}" type="number" pattern="\d*" min="1" name="updates[{{ item.key }}]" data-cart-item-input-quantity>
+                <label for="updates_{{ item.key }}" class="cart-item__qty-label">{{ 'cart.label.quantity' | t }}</label>
+                <input class="cart-item__qty-input" type="number" pattern="\d*" min="1" name="updates[{{ item.key }}]" id="updates_{{ item.key }}" value="{{ item.quantity }}" data-cart-item-input-quantity>
               </div>
 
               <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0" class="btn-link cart-item__remove medium-up--hide" data-cart-item-delete>{{ 'cart.general.remove' | t }}</a>

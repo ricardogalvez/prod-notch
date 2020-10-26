@@ -3961,6 +3961,7 @@ html {
 }
 
 .site-footer {
+  border-top: 3rem solid red;
   text-align: center;
   background-color: $color-footer-bg;
   color: $color-footer-text;
@@ -5758,7 +5759,7 @@ $transition-image-slideshow: opacity 0.8s cubic-bezier(0.44, 0.13, 0.48, 0.87), 
   @include display-flexbox;
   position: relative;
   overflow: hidden;
-  height: calc(100vh - 35px);
+  height: calc(70vh - 35px);
   min-height: 500px;
 }
 
@@ -6262,7 +6263,7 @@ $site-header-wrapper-color: rgba($color-header, 0);
   margin-bottom: 0;
   padding: ($gutter / 2) 0;
   text-align: center;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 .site-header__logo {
@@ -6271,7 +6272,11 @@ $site-header-wrapper-color: rgba($color-header, 0);
 
 .site-header__logo-image {
   display: block;
+  float: left;
+  height: 3.5rem;
   margin: 0 auto;
+  position: relative;
+  left: -1.2rem;
 
   .site-header--transparent & {
     display: none;
@@ -8240,33 +8245,4 @@ $fast-drawer-transition: transform 0.55s cubic-bezier(0.645, 0.045, 0.355, 1);
 
 .collection-grid-item__title {
   margin-bottom: $grid-gutter;
-}
-
-
-//@import "notch";
-
-.site-header {
-
-  background: green;
-
-  &__logo-wrapper {
-
-     h5 {
-
-       a {
-         font-size: 3.6(rem);
-         letter-spacing: 0.1(rem);
-         padding: 1(rem) 0 0 0;
-         top: 4(rem);
-         // stuff
-       }
-     }
-  } // /__logo-wrapper
-
-  &__logo-image {
-    float: left;
-    height: 60px;
-    position: relative;
-    top: 0.6rem;
-  }
 }

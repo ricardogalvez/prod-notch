@@ -1,23 +1,9 @@
 {
   "current": {
-    "checkout_header_image": "",
-    "checkout_logo_image": "",
-    "checkout_logo_position": "left",
-    "checkout_logo_size": "medium",
-    "checkout_body_background_image": "",
-    "checkout_body_background_color": "#fff",
-    "checkout_input_background_color_mode": "white",
-    "checkout_sidebar_background_image": "",
-    "checkout_sidebar_background_color": "#fafafa",
-    "checkout_heading_font": "Helvetica Neue",
-    "checkout_body_font": "Helvetica Neue",
-    "checkout_accent_color": "#1990C6",
-    "checkout_button_color": "#1990C6",
-    "checkout_error_color": "#ff6d6d",
-    "color_primary": "#eb4f47",
-    "color_header_text": "#e1c9b4",
-    "color_primary_heading_text": "#4a4a4a",
-    "color_primary_body_text": "#4a4a4a",
+    "color_primary": "#150a31",
+    "color_header_text": "#000000",
+    "color_primary_heading_text": "#454444",
+    "color_primary_body_text": "#434443",
     "color_footer_text": "#4a4a4a",
     "color_button_text": "#ffffff",
     "color_header_bg": "#fff",
@@ -28,30 +14,58 @@
     "color_form_elements": "#fff",
     "color_cart_flag": "#eb4f47",
     "type_base_size": "62.5%",
-    "type_header_family": "Baskerville MT, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif",
+    "type_header_family": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
     "type_bold_titles": false,
-    "type_base_family": "'Avenir', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+    "type_base_family": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
     "show_cart_drawer": true,
-    "show_cart_note": false,
+    "show_cart_note": true,
     "share_facebook": true,
     "share_twitter": true,
     "share_pinterest": true,
+    "social_facebook_link": "",
+    "social_twitter_link": "",
+    "social_pinterest_link": "",
+    "social_instagram_link": "",
+    "social_snapchat_link": "",
     "social_tumblr_link": "",
     "social_youtube_link": "",
     "social_vimeo_link": "",
-    "favicon": "",
+    "favicon": "shopify:\/\/shop_images\/avatar.fb.logo_3x_d018ade3-2e9a-42ca-a259-52600623318d.png",
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "small",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "Helvetica Neue",
+    "checkout_body_font": "Helvetica Neue",
+    "checkout_accent_color": "#1990c6",
+    "checkout_button_color": "#1990c6",
+    "checkout_error_color": "#ff6d6d",
     "logo_max_height": "15",
     "sections": {
       "header": {
         "type": "header",
         "settings": {
-          "icon": "bag",
-          "logo_max_height": "15",
-          "enable_transparent": true,
-          "transparent_text_color": "#ffffff",
+          "icon": "cart",
+          "logo": "shopify:\/\/shop_images\/website.notchlogo.png",
+          "logo_max_height": "",
+          "enable_transparent": false,
+          "transparent_logo": "",
+          "transparent_text_color": "#000000",
           "primary_navigation": "main-menu",
           "secondary_navigation": "footer",
-          "show_social_icons": false
+          "show_social_icons": false,
+          "show_announcement": false,
+          "home_page_only": true,
+          "announcement_text": "Announce something here",
+          "announcement_link": "",
+          "announcement_icon": "checkmark",
+          "announcement_color_bg": "#7796a8",
+          "announcement_color_text": "#fff"
         }
       },
       "footer": {
@@ -71,27 +85,27 @@
           "show_social_icons": true,
           "show_payment_icons": true,
           "enable_parallax": true,
-          "show_newsletter": true
+          "show_newsletter": true,
+          "newsletter_heading": "Sign up for updates",
+          "newsletter_button": "Ok"
         }
-      },
-      "1476381402840": {
-        "type": "video",
-        "settings": {}
       },
       "1476381658595": {
         "type": "hero",
         "settings": {
-          "hero_size": "large",
-          "image": "",
+          "hero_size": "small",
+          "image": "shopify:\/\/shop_images\/notch.about.png",
           "alignment": "top left",
-          "text_size": "medium",
+          "title": "Notch",
+          "text": "<p>Never forsake your hold down strategy.<\/p>",
+          "text_size": "large",
           "use_second_button": false,
-          "button_label": "",
-          "button_link": "",
-          "show_overlay": false,
-          "overlay_color": "#000000",
-          "overlay_text": "#3a3a3a",
-          "overlay_opacity": "0.5"
+          "button_label": "Works",
+          "button_link": "shopify:\/\/blogs\/works",
+          "show_overlay": true,
+          "overlay_color": "#bedfc7",
+          "overlay_text": "#000000",
+          "overlay_opacity": "0.6"
         }
       },
       "collection-template": {
@@ -109,11 +123,15 @@
       },
       "1478026923193": {
         "type": "feature-row",
+        "disabled": true,
         "settings": {
-          "size": "large",
-          "background_color": "#faf9f6",
-          "image_crop": "circle",
-          "alignment": "top left",
+          "size": "medium",
+          "background_color": "#e4e4e4",
+          "image": "shopify:\/\/shop_images\/intersect.front.png",
+          "image_crop": "none",
+          "alignment": "top center",
+          "title": "Small Intersect",
+          "text": "",
           "use_second_button": false,
           "button_label": "",
           "button_link": "",
@@ -123,14 +141,21 @@
       },
       "1478027260401": {
         "type": "quotes",
+        "disabled": true,
         "blocks": {
           "1478027260401-0": {
             "type": "quote",
-            "settings": {}
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+              "author": "Author's name"
+            }
           },
           "1478027389453": {
             "type": "quote",
-            "settings": {}
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+              "author": "Author's name"
+            }
           }
         },
         "block_order": [
@@ -156,53 +181,59 @@
       "blog-template": {
         "type": "blog-template",
         "settings": {
+          "articles": "2",
+          "rows": "4",
           "blog_show_date": true
         }
       },
       "slideshow": {
         "type": "slideshow",
         "blocks": {
-          "1486649146314": {
+          "1495548487243": {
             "type": "image",
-            "settings": {}
-          },
-          "1486649185448": {
-            "type": "image",
-            "settings": {}
-          },
-          "1486649208703": {
-            "type": "image",
-            "settings": {}
-          },
-          "1486649267624": {
-            "type": "image",
-            "settings": {}
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_7456_sm.png",
+              "alignment": "center center",
+              "title": "The Notch Intersect Phone Holder",
+              "button": "The Small Notch Phone holder",
+              "cta_link": "shopify:\/\/products\/intersect"
+            }
           }
         },
         "block_order": [
-          "1486649146314",
-          "1486649185448",
-          "1486649208703",
-          "1486649267624"
+          "1495548487243"
         ],
         "settings": {
-          "cta": "view more",
-          "show_overlay": true,
-          "overlay_color": "#313131",
-          "overlay_text": "#ffffff",
-          "overlay_opacity": "0.3"
+          "cta": "Learn More",
+          "show_overlay": false,
+          "overlay_color": "#bbf7c4",
+          "overlay_text": "#222222",
+          "overlay_opacity": "0.2"
         }
       },
       "1486649413883": {
         "type": "gallery",
+        "disabled": true,
         "blocks": {
           "1486649413883-0": {
             "type": "image",
-            "settings": {}
+            "settings": {
+              "image": "",
+              "alignment": "center center",
+              "icon": "checkmark",
+              "cta_label": "Talk about your brand",
+              "link": ""
+            }
           },
           "1486649413883-1": {
             "type": "image",
-            "settings": {}
+            "settings": {
+              "image": "",
+              "alignment": "center center",
+              "icon": "checkmark",
+              "cta_label": "Talk about your brand",
+              "link": ""
+            }
           }
         },
         "block_order": [
@@ -219,38 +250,65 @@
       },
       "1486649522802": {
         "type": "highlight",
+        "disabled": true,
         "settings": {
           "border_color": "#cbc8c1",
           "content_alignment": "middle",
+          "image": "",
           "image_position": "back",
-          "use_second_button": false
+          "heading": "Gift card",
+          "text": "Looking for something for someone special? A gift card to our store is the perfect idea!",
+          "use_second_button": false,
+          "button_text": "View",
+          "button_link": ""
         }
       },
       "1486649604878": {
         "type": "featured-slider",
+        "disabled": true,
         "blocks": {
           "1486649604878-0": {
             "type": "slide",
             "settings": {
-              "background_color": "#9d988b"
+              "background_color": "#9d988b",
+              "show_image": true,
+              "slide_image": "",
+              "slide_title": "Featured variant",
+              "slide_button_text": "View",
+              "slide_button_url": ""
             }
           },
           "1486649604878-1": {
             "type": "slide",
             "settings": {
-              "background_color": "#cdcdcd"
+              "background_color": "#cdcdcd",
+              "show_image": true,
+              "slide_image": "",
+              "slide_title": "Featured variant",
+              "slide_button_text": "View",
+              "slide_button_url": ""
             }
           },
           "1486649604878-2": {
             "type": "slide",
             "settings": {
-              "background_color": "#a7a59e"
+              "background_color": "#a7a59e",
+              "show_image": true,
+              "slide_image": "",
+              "slide_title": "Featured variant",
+              "slide_button_text": "View",
+              "slide_button_url": ""
             }
           },
           "1486649769533": {
             "type": "slide",
             "settings": {
-              "background_color": "#383a3c"
+              "background_color": "#383a3c",
+              "show_image": true,
+              "slide_image": "",
+              "slide_title": "Featured variant",
+              "slide_button_text": "View",
+              "slide_button_url": ""
             }
           }
         },
@@ -263,6 +321,8 @@
         "settings": {
           "use_second_button": false,
           "text_color": "#ffffff",
+          "cover_image": "",
+          "cover_title": "Showcase some product information",
           "cover_title_desktop_position": "center",
           "show_overlay": true,
           "overlay_color": "#404040",
@@ -273,7 +333,8 @@
       "1486649811524": {
         "type": "featured-product",
         "settings": {
-          "layout": "square",
+          "featured_product": "intersect",
+          "layout": "full",
           "image_size": "cover",
           "background_color": "transparent",
           "show_quantity_selector": false,
@@ -297,37 +358,68 @@
           "1492806970384-0": {
             "type": "text",
             "settings": {
-              "heading_text": "",
+              "heading_text": "Intersect Phone Holder",
               "heading_color": "#3a3a3a",
-              "heading_style": "h4",
-              "width": "100%",
-              "alignment": "center",
-              "align_text": "center"
+              "heading_style": "h3",
+              "paragraph_text": "<p>At Notch we believe in simple solutions. We want to share our solution to make your life a little easier. We were constantly propping up our phones to read recipes, watch videos and video chat, so we came up with this design, that allows you to stand up your phone so you can do all those things. <a href=\"\/products\/intersect\" title=\"Intersect - Holder\">And now we want to share it with you.<\/a><\/p>",
+              "paragraph_color": "#4a4a4a",
+              "paragraph_size": "1",
+              "width": "50%",
+              "alignment": "top",
+              "align_text": "right"
+            }
+          },
+          "1519129248642": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/intersect.bag.png",
+              "width": "50%",
+              "alignment": "top"
             }
           }
         },
         "block_order": [
-          "1492806970384-0"
+          "1492806970384-0",
+          "1519129248642"
         ],
         "settings": {
-          "heading_text": "",
+          "heading_text": "Simplicity, Structure and Convenience",
           "heading_color": "#3a3a3a",
-          "background_color": "",
+          "background_color": "#ffffff",
           "top_margin": true,
-          "bottom_margin": false
+          "bottom_margin": true
+        }
+      },
+      "1519130104458": {
+        "type": "hero",
+        "disabled": true,
+        "settings": {
+          "hero_size": "small",
+          "image": "",
+          "alignment": "center center",
+          "title": "Notch Designs",
+          "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+          "text_size": "large",
+          "use_second_button": false,
+          "button_label": "",
+          "button_link": "",
+          "show_overlay": true,
+          "overlay_color": "#000000",
+          "overlay_text": "#ffffff",
+          "overlay_opacity": "0.8"
         }
       }
     },
     "content_for_index": [
+      "1492806970384",
+      "1486649811524",
       "1478026923193",
-      "1476381402840",
       "1476381658595",
       "1486649413883",
       "1478027260401",
-      "1492806970384",
       "1486649522802",
       "1486649604878",
-      "1486649811524"
+      "1519130104458"
     ]
   },
   "presets": {

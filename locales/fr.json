@@ -33,11 +33,26 @@
       "share_on_facebook": "Partager",
       "share_on_twitter": "Tweeter",
       "share_on_pinterest": "Épingler",
-      "social_platform": "{{ name }} sur {{ platform }}",
+      "link_facebook": "Facebook",
+      "link_twitter": "Twitter",
+      "link_pinterest": "Pinterest",
+      "link_snapchat": "Snapchat",
+      "link_instagram": "Instagram",
+      "link_tumblr": "Tumblr",
+      "link_youtube": "Youtube",
+      "link_vimeo": "Vimeo",
       "alt_text": {
         "share_on_facebook": "Partager sur Facebook",
         "share_on_twitter": "Tweeter sur Twitter",
-        "share_on_pinterest": "Épingler sur Pinterest"
+        "share_on_pinterest": "Épingler sur Pinterest",
+        "view_on_facebook": "Voir sur Facebook",
+        "view_on_twitter": "Voir sur Twitter",
+        "view_on_pinterest": "Voir sur Pinterest",
+        "view_on_snapchat": "Voir sur Snapchat",
+        "view_on_instagram": "Voir sur Instagram",
+        "view_on_tumblr": "Voir sur Tumblr",
+        "view_on_youtube": "Voir sur Youtube",
+        "view_on_vimeo": "Voir sur Vimeo"
       }
     },
     "search": {
@@ -52,9 +67,7 @@
     },
     "newsletter_form": {
       "newsletter_placeholder": "Mon adresse e-mail",
-      "confirmation": "Merci pour votre abonnement",
-      "blank_error": "L'e-mail ne peut pas être vide.",
-      "invalid_error": "Veuillez entrer une adresse e-mail valide."
+      "confirmation": "Merci pour votre abonnement"
     },
     "header": {
       "expand_navigation": "Basculer la navigation",
@@ -100,7 +113,7 @@
       "item_quantity": "Quantité pour cet article",
       "cookies_required": "Activer les cookies pour utiliser le panier",
       "cart_error": "Une erreur est survenue lors de l’actualisation de votre carte. Essayez de nouveau s’il vous plaît.",
-      "cart_quantity_error_html": "Vous ne pouvez ajouter que {{ quantity }} {{ title }} à votre panier."
+      "cart_quantity_error_html": "Vous ne pouvez ajouter que <span><\/span> <\/span><\/span> à votre panier."
     },
     "label": {
       "product": "Produit",
@@ -215,8 +228,7 @@
       "quantity": "Quantité",
       "total": "Total",
       "fulfilled_at": "Traitée le {{ date }}",
-      "subtotal": "Sous-total",
-      "track_shipment": "Retracer l'envoi"
+      "subtotal": "Sous-total"
     },
     "recover_password": {
       "title": "Réinitialiser votre mot de passe",
@@ -248,8 +260,6 @@
       "collection_title": "Le nom de votre collection",
       "product_vendor": "Le vendeur du produit",
       "product_title": "Titre du produit",
-      "blog_title": "Le titre de votre publication",
-      "blog_excerpt": "Votre magasin n'a encore rien bloggué. Un blog peut être utilisé pour parler des lancements de nouveaux produits, d'astuces, ou d'autres nouvelles que vous voulez partager avec vos clients. Vous pouvez regarder le blog d'e-commerce de Shopify pour trouver de l'inspiration et des conseils pour votre propre magasin et blog.",
       "no_content": "Cette section ne contient actuellement aucun contenu. Ajoutez-en en utilisant la barre latérale."
     }
   },
@@ -262,6 +272,7 @@
       "create_account": "Créer un compte"
     },
     "footer": {
+      "social_platform": "{{ name }} sur {{ platform }}",
       "copyright": "Droit d'auteur"
     }
   },
@@ -291,7 +302,7 @@
       "address_error": "Vous ne trouvez pas cette adresse",
       "address_no_results": "Aucun résultat pour cette adresse",
       "address_query_limit_html": "Vous avez dépassé la limite de Google utilisation de l'API. Envisager la mise à niveau à un <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">régime spécial<\/a>.",
-      "auth_error_html": "Il y avait un problème authentifier votre compte Google Maps API."
+      "auth_error_html": "Il y avait un problème authentifier votre compte Google Maps . Créer et activer <a href=\"https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key\">l'API JavaScript<\/a> et <a href=\"https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key\">l'API de géocodage<\/a> les autorisations de application."
     },
     "product_template": {
       "open_image_slideshow": "Ouvrir l'image dans le diaporama",
@@ -299,9 +310,6 @@
     },
     "featured_product": {
       "full_details": "Tous les détails"
-    },
-    "newsletter": {
-      "submit": "Soumettre"
     }
   },
   "gift_cards": {
@@ -324,5 +332,8 @@
   "video": {
     "play": "Lire la vidéo",
     "close": "Arrêter la vidéo"
+  },
+  "consistent_cart_addon": {
+    "merge_cart_text": "It seems you already have a cart from a previous session. Would you like to merge your previous cart with your current cart?"
   }
 }

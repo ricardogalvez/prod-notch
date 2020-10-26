@@ -15,7 +15,7 @@
 <div data-section-id="{{ section.id }}" data-section-type="slideshow-section">
   <div id="Slideshow-{{ section.id }}" class="slideshow">
     {% if section.blocks.size > 0 %}
-      <div class="slideshow__slides">
+      <div class="slideshow__slides babasoon-abc">
 
         {% for block in section.blocks %}
           <div class="slideshow__slide slideshow__slide--{{ block.id }}{% if forloop.first %} slideshow__slide--active{% endif %}{% if section.settings.show_overlay %} slideshow__overlay{% endif %}" {% unless forloop.first %}aria-hidden="true"{% endunless %} {{ block.shopify_attributes }}>
